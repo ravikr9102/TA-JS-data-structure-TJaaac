@@ -21,12 +21,15 @@ for (let i = 0; i < numbers.length; i++ ) {
 
 // 4. Find the highest number in the array and print it to the console using console.log()
 
-let highest = 0;
+let highest = numbers[0];
 for(let i = 0; i < numbers.length; i++) {
     if(highest < numbers[i]) {
        highest = numbers[i];
     }
 }
+
+const high = Math.max(...numbers);
+console.log(high);
 
 // 5. Find the lowest number in the array and print it to the console using console.log()
 
@@ -36,6 +39,10 @@ for(let i = 1;i<numbers.length;i++){
         lowest=numbers[i]
     }
 }
+
+const low = Math.min(...numbers);
+console.log(low);
+
 // 6. Find the even numbers in the array and print them to the console using console.log()
 
 
